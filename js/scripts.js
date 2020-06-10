@@ -1,6 +1,10 @@
 // Business Logic
 function plTrans(translate){
-  if (translate.charAt(0) === "a" || translate.charAt(0) === "e" || translate.charAt(0) === "i" || translate.charAt(0) === "o" || translate.charAt(0) === "u") {
+  
+  if (translate === RegExp("/d")) {
+    return translate
+  }
+  else if (translate.charAt(0) === "a" || translate.charAt(0) === "e" || translate.charAt(0) === "i" || translate.charAt(0) === "o" || translate.charAt(0) === "u") {
     return translate + "way";
   }
   else {
